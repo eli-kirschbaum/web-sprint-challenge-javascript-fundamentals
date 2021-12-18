@@ -18,7 +18,7 @@ myFunction();
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 /*
-
+  nestedFunction first looks into its own code block for the variable but then is able to use a closure to reach outside and look there for the variable because they are in the same overall function and share function scope
 */
 
 
