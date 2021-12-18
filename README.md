@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    - .map returns a new array rather than altering the original one and is typically used to convert data into something else
+    
+    - .reduce requires 2 parameters, an accumulator and the item it is iterating over, and does not return a new array.  It is used to add combine a bunch of data points with something like addition or multiplication and returns a single value.
+    
+    - .filter also returns a new array rather than altering an original, but is intended to evaluate data based on a boolean True or False and add it to the new array based on those results
+
 2. Explain the difference between a callback and a higher order function.
+
+    - a callback is a function that is passed into another function as an argument, while a higher order function is the function that accepts a callback function as an argument passed into it
 
 3. Explain what a closure is.
 
+    - a closure is when some function has to go outside of its code block and scope to access a variable defined elsewhere
+
 4. Describe the four principles of the 'this' keyword.
 
+    - Window/Global Binding: when using 'this' outside of a function or in the global scope, this is set to the window object
+
+    - Imblicit Binding: when using dot notation to call a function, 'this' refers to the object to the left of the dot
+
+    - New Binding: when a constructor function is used to create a new object with the 'new' keyword, 'this' refers to the new object returned by the constructor
+
+    - Explicit Binding: when the .call or .apply methods are used, 'this' is explicitly set to the object that is called with them
+
 5. Why do we need super() in an extended class?
+
+    - To pass in the arguments needed to initialize the parent class, similar to how object.create and parent.call worked for basic constructor functions and their prototypes
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
